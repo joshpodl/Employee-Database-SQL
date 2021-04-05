@@ -49,7 +49,6 @@ ORDER BY emp_no;
 SELECT employees.emp_no,
 employees.last_name,
 employees.first_name,
-dept_emp.dept_no,
 departments.dept_name
 FROM employees
 LEFT JOIN dept_emp ON employees.emp_no = dept_emp.emp_no
@@ -61,7 +60,6 @@ ORDER BY emp_no;
 SELECT employees.emp_no,
 employees.last_name,
 employees.first_name,
-dept_emp.dept_no,
 departments.dept_name
 FROM employees
 LEFT JOIN dept_emp ON employees.emp_no = dept_emp.emp_no
